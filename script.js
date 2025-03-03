@@ -1,3 +1,3 @@
 function scrollToContent() {
-    document.getElementById('additional-content').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    document.getElementById('container').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }

@@ -7,11 +7,11 @@
     <title>Slanted Rectangle</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <div class="container">
+    <div class="cover-container">
         <div class="personal">Personal</div>
         <div class="rectangle">
             <span class="claire">Claire</span>
@@ -49,44 +49,64 @@
     </div>
     <div class="container">
         <p>Friends & Family</p>
-        <div class="art-slider">
-            <div class="art-slide-track">
-                <div class="art-slide">
-                    <img id="art-slide-1" src="assets/place-holder.png" alt="art place holder 1"/>
+        <div class="auto-slider">
+            <div class="auto-slide-track">
+                <div class="auto-slide">
+                    <img id="auto-slide-1" src="assets/place-holder.png" alt="place holder 1"/>
                 </div>
-                <div class="art-slide">
-                    <img id="art-slide-2" src="assets/place-holder.png" alt="art place holder 2"/>
+                <div class="auto-slide">
+                    <img id="auto-slide-2" src="assets/place-holder.png" alt="place holder 2"/>
                 </div>
-                <div class="art-slide">
-                    <img id="art-slide-3" src="assets/place-holder.png" alt="art place holder 3"/>
+                <div class="auto-slide">
+                    <img id="auto-slide-3" src="assets/place-holder.png" alt="place holder 3"/>
                 </div>
-                <div class="art-slide">
-                    <img id="art-slide-4" src="assets/place-holder.png" alt="art place holder 4"/>
+                <div class="auto-slide">
+                    <img id="auto-slide-4" src="assets/place-holder.png" alt="place holder 4"/>
                 </div>
-                <div class="art-slide">
-                    <img id="art-slide-5" src="assets/place-holder.png" alt="art place holder 5"/>
+                <div class="auto-slide">
+                    <img id="auto-slide-5" src="assets/place-holder.png" alt="place holder 5"/>
                 </div>
 
-                <div class="art-slide">
-                    <img id="art-slide-1" src="assets/place-holder.png" alt="art place holder 1"/>
+                <div class="auto-slide">
+                    <img id="auto-slide-1" src="assets/place-holder.png" alt="place holder 1"/>
                 </div>
-                <div class="art-slide">
-                    <img id="art-slide-2" src="assets/place-holder.png" alt="art place holder 2"/>
+                <div class="auto-slide">
+                    <img id="auto-slide-2" src="assets/place-holder.png" alt="place holder 2"/>
                 </div>
-                <div class="art-slide">
-                    <img id="art-slide-3" src="assets/place-holder.png" alt="art place holder 3"/>
+                <div class="auto-slide">
+                    <img id="auto-slide-3" src="assets/place-holder.png" alt="place holder 3"/>
                 </div>
-                <div class="art-slide">
-                    <img id="art-slide-4" src="assets/place-holder.png" alt="art place holder 4"/>
+                <div class="auto-slide">
+                    <img id="auto-slide-4" src="assets/place-holder.png" alt="place holder 4"/>
                 </div>
-                <div class="art-slide">
-                    <img id="art-slide-5" src="assets/place-holder.png" alt="art place holder 5"/>
+                <div class="auto-slide">
+                    <img id="auto-slide-5" src="assets/place-holder.png" alt="place holder 5"/>
                 </div>
             </div>
         </div>                
     </div>
     <div class="container">
-        <p>Art</p>
+        <p>Music</p>
+        <div class="music-container">
+            <div class="column">
+                <p>Column 1 content goes here.</p>
+                <video width="320" height="240" controls>
+                    <source src="assets/riff.mov" type="video/mp4">
+            </div>
+            <div class="column">
+                <p>Column 2 content goes here.</p>
+                <video width="320" height="240" controls>
+                    <source src="assets/riff.mov" type="video/mp4">
+            </div>
+            <div class="column">
+                <p>Column 3 content goes here.</p>
+                <video width="320" height="240" controls>
+                    <source src="assets/riff.mov" type="video/mp4">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <p id="art">Art</p>
         <div class="left-right-container" id="container">
             <div class="left-container">
                 <div class="image-container">
@@ -105,23 +125,10 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <p>Music</p>
-        <div class="music-container">
-            <div class="column">
-                <p>Column 1 content goes here.</p>
-            </div>
-            <div class="column">
-                <p>Column 2 content goes here.</p>
-            </div>
-            <div class="column">
-                <p>Column 3 content goes here.</p>
-            </div>
-        </div>
-        <video width="320" height="240" controls>
-            <source src="asset/Riff.mov" type="video/mp4">
-        </video>
+    <div>
+        <a href="#" class="to-top" onclick="scrollToTop(event)">
+            <img src="assets/up-arrow.png" alt="">
+        </a>
     </div>
 </body>
 
